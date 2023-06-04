@@ -169,9 +169,7 @@ img {
 
 }
 
-.menu-link {
-    color: var(--title-color);
-}
+
 
 /* -------------------HERO SECTION--------------------- */
 
@@ -659,6 +657,7 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
     transition: transform 250ms lenear;
+    transform: translateY(0%);
 }
 
 .gallery-portfolio:focus {
@@ -666,6 +665,7 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
     transition: transform 250ms lenear;
+    transform: translateY(0%);
 }
 
 .container-gallery {
