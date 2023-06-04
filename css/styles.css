@@ -127,6 +127,7 @@ img {
 .contact-link {
     letter-spacing: 0.02em;
     color: var(--primery-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -152,7 +153,7 @@ img {
 .menu-link {
     position: relative;
     color: #404BBF;
-    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link::after {
@@ -370,7 +371,7 @@ img {
 .icon-team-list{
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .team-soc-link{
@@ -380,7 +381,8 @@ img {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover {
@@ -454,7 +456,7 @@ img {
     min-width: 168px;
     height: 88px;
     width: calc((100% - 120px) / 6);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
 }
 
@@ -467,6 +469,7 @@ img {
     color: #8e8f99;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover {
     border-color: #404bbf;
@@ -564,7 +567,7 @@ img {
 .footer-social-link {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .social-link {
@@ -575,6 +578,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -638,6 +642,12 @@ img {
 .gallery-portfolio {
     
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-text:hover,
+.gallery-text:focus {
+    transform: translateY(0%);
 }
 
 .link-portfolio {
@@ -698,25 +708,6 @@ img {
     transition: 300ms linear;
 }
 
-.mod-btn {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    border-radius: 4px;
-    color: var(--secondary-color);
-    background-color: var(--secondary-light-color);
-    min-width: 69px;
-    height: 48px;
-    padding: 12px 24px 12px 24px;
-    border: 1px solid #E7E9FC;
-    gap: 24px;
-}
 
 .mod-btn {
     font-family: 'Roboto', sans-serif;
@@ -736,6 +727,9 @@ img {
     padding: 12px 24px 12px 24px;
     border: 1px solid #E7E9FC;
     gap: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mod-btn:hover {
@@ -804,14 +798,14 @@ img {
     height: 100%;
     background: rgba(46, 47, 66, 0.4);
     top: 0;
-    transition: opacity 300ms linear, visibility 300ms linear;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     transition: transform 300ms lenear;
     width: 408px;
     min-height: 584px;
@@ -819,7 +813,7 @@ img {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 24px;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);    
 
 }
 
@@ -861,17 +855,14 @@ transform: translate(-50% -50%) scale(0);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-    border: none;
-    fill: #ffffff;
-}
-
 .modal-close:hover,
 .modal-close:focus {
-    color: #FFFFFF;
+    border: none;
+    fill: #ffffff;
     background-color: #404BBF;
 }
+
+
 
 
 
