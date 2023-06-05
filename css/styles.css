@@ -673,18 +673,19 @@ img {
     position: relative;
 }
 
-.gallery-item:hover .gallery-cover-text{
+.gallery-item:hover .gallery-cover-text,
+.gallery-item:focus .gallery-cover-text{
     transform: translateY(0);
 }
 
 .gallery-cover-wrap {
     position: relative;
     overflow: hidden;
-
     border: 1px solid #e7e9fc;
     border-top: none;
     display: block;
 }
+
 .gallery-cover-text {
     position: absolute;
     top: 0;
@@ -698,9 +699,10 @@ img {
     padding-top: 40px;
     padding-left: 32px;
     background-color: #4D5AE5;
+    width: 100%;
     height: 100%;
     transform: translateY(100%);
-    transition: 300ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -754,7 +756,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primery-color);
-
     border: 1px solid #e7e9fc;
     border-top: none;
     display: block;
