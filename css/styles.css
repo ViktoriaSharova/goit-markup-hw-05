@@ -680,7 +680,7 @@ img {
 .gallery-cover-wrap {
     position: relative;
     overflow: hidden;
-    padding: 32px 16px;
+
     border: 1px solid #e7e9fc;
     border-top: none;
     display: block;
@@ -754,7 +754,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primery-color);
-    padding: 32px 16px;
+
     border: 1px solid #e7e9fc;
     border-top: none;
     display: block;
