@@ -670,7 +670,7 @@ img {
 
 .gallery-item {
     width: calc((100% - 48px) / 3);
-    position: relative;
+
 }
 
 .gallery-portfolio:hover .gallery-cover-text,
