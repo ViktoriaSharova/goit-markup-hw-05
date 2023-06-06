@@ -673,8 +673,8 @@ img {
     position: relative;
 }
 
-.gallery-item:hover .gallery-cover-text,
-.gallery-item:focus .gallery-cover-text{
+.gallery-portfolio:hover .gallery-cover-text,
+.gallery-portfolio:focus .gallery-cover-text{
     transform: translateY(0);
 }
 
