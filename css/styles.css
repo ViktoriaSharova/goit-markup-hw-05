@@ -820,7 +820,6 @@ transform: translate(-50% -50%) scale(0);
     position: absolute;
     width: 24px;
     height: 24px;
-    border: 1px dashed #9747FF;
     border-radius: 50%;
     margin-left: auto;
     display: flex;
@@ -828,6 +827,7 @@ transform: translate(-50% -50%) scale(0);
     justify-content: center;
     top: 24px;
     right: 24px;
+    color: ;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -852,7 +852,7 @@ transform: translate(-50% -50%) scale(0);
 .modal-close:hover,
 .modal-close:focus {
     border: none;
-    fill: #FFFFFF;
+
     background-color: #404BBF;
 
 }
