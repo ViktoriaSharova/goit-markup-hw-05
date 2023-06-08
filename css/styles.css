@@ -679,9 +679,7 @@ img {
 .gallery-cover-wrap {
     position: relative;
     overflow: hidden;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-    display: block;
+
 }
 
 .gallery-cover-text {
