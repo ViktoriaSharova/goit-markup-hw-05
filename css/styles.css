@@ -852,7 +852,7 @@ transform: translate(-50% -50%) scale(0);
 .modal-close:hover,
 .modal-close:focus {
     border: none;
-
+    fill: #FFFFFF;
     background-color: #404BBF;
 
 }
