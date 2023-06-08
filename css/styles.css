@@ -856,6 +856,10 @@ transform: translate(-50% -50%) scale(0);
     background-color: #404BBF;
 
 }
+ .modal-close-icon:hover,
+ .modal-close-icon:focus {
+    fill: #FFFFFF;
+ }
 
 /* --------------MODAL--------------- */
 
